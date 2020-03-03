@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
+
+	// ***************************
+	// there's no ternary if in go
+	// ***************************
+
 	earthIsFlat := false
 
 	// basic if/else
