@@ -16,6 +16,17 @@ func return2Val() (int, int) {
 	return 2, 3
 }
 
+// variadic function
+// n number of arguments
+func variadicFunc(nums ...int) {
+	fmt.Print(nums, " ")
+	total := 0
+	for _, num := range nums {
+		total += num
+	}
+	fmt.Println(total)
+}
+
 func main() {
 	add := sum(1, 2)
 	fmt.Println("1+2 = ", add)
@@ -28,4 +39,8 @@ func main() {
 	// subset of return value
 	_, c := return2Val()
 	fmt.Println("only the second value is ", c)
+
+	variadicFunc(1, 2)
+	variadicFunc(1, 2, 3)
+	variadicFunc(1, 2, 3, 4)
 }
