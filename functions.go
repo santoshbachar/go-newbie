@@ -43,4 +43,7 @@ func main() {
 	variadicFunc(1, 2)
 	variadicFunc(1, 2, 3)
 	variadicFunc(1, 2, 3, 4)
+
+	nums := []int{1, 2, 3, 4, 5}
+	variadicFunc(nums...)
 }
