@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+// *************************************************
+// interface = named collection of method signatures
+// *************************************************
+
 type geometry interface {
 	area() float64
 	perim() float64
